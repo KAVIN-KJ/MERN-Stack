@@ -3,21 +3,78 @@
 }
 .content{
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    margin-bottom: 10px;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    height: fit-content;
+    width: fit-content;
 }
 .heading{
-    margin: 10px;
+    color: white;
+    background-color: black;
     font-size: 20px;
-    font-weight: normal;
-    border: 1px solid blue;
-    box-shadow: 0px 0px 30px blue;
     padding: 10px;
-    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    transition: 500ms ease;
+}
+.options{
+    padding: 20px;
+    font-size: 20px;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
     transition: 500ms ease;
 }
 .heading:hover{
     scale: 1.2;
+    box-shadow: 0px 0px 30px blue;
+}
+.heading-list{
+    display: none;
+    list-style-type: none;
+    transition: 500ms ease;
+    animation: headlist 1s ease;
+}
+@keyframes headlist {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.options:hover .heading-list{
+    display: block;
+}
+
+.heading-text{
+    margin-bottom: 10px;
+}
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+
+    width: 600px;
+    border-radius: 20px;
+    transition: 500ms ease;
+}
+.image:hover{
+    scale: 110%;
+    rotate: -2deg;
+    box-shadow: 0px 0px 50px black;
+}
+.table td,th{
+    margin: 0px;
+    border: 1px solid;
+    padding: 5px;
+    transition: 500ms ease;
+}
+th:hover,td:hover{
+    scale: 1.05;
+    color: white;
+    background-color: black;
+    box-shadow: 0px 0px 50px blue;
 }

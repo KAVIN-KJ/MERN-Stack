@@ -1,0 +1,19 @@
+.pos1{
+    position: sticky;
+    left: 100px;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    background-color: rgb(255, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+.pos2{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    background-color: violet;
+    align-items: center;
+    justify-content: center;
+}
